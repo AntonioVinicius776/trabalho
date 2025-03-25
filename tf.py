@@ -7,10 +7,13 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 tf=pd.read_csv('dados.csv',delimiter=';')
-
 plt.figure(figsize=(10,5))
 
-plt.plot(tf['ano'],tf['media de fertilidade'])
+plt.plot(tf['ano'],tf['fertilidademb'])
+#plt.plot(tf['ano'],tf['fertilidademlb'])
+#plt.plot(tf['ano'],tf['fertilidademfp'])
+#plt.plot(tf['ano'],tf['fertilidademus'])
+#plt.plot(tf['ano'],tf['fertilidademm'])
 
 plt.xlim(1999,2025)
 #plt.ylim(0,5)
