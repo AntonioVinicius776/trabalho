@@ -17,13 +17,14 @@ ax1.plot(am['ano'],am['fertilidademfp'],label='filipinas',marker='o')
 ax1.plot(am['ano'],am['fertilidademus'],label='estados unidos',marker='o')
 ax1.plot(am['ano'],am['fertilidademm'],label='global',marker='o')
 
-plt.xlim(1999,2025)
-#plt.ylim(0,5)
+ax1.set_xlim(1999,2025)
+#ax1.set_ylim(1999,2025)
 
 ax1.set_title('Taxa de fecundidade ao decorrer dos anos')
-plt.grid(True)
-plt.legend(title='')
-
+ax1.set_xlabel('ano')
+ax1.set_ylabel('Taxa de fecundidade')
+ax1.grid(True)
+ax1.legend(title='Taxa de fecundidade')
 
 # Segundo gráfico
 ax2.plot(am['ano'],am['idhbr'],label='brasil',marker='o')
@@ -32,12 +33,14 @@ ax2.plot(am['ano'],am['idhphl'],label='filipinas',marker='o')
 ax2.plot(am['ano'],am['usa'],label='estados unidos',marker='o')
 ax2.plot(am['ano'],am['idhw'],label='global',marker='o')
 
-plt.xlim(1999,2025)
-#plt.ylim(0,5)
+ax2.set_xlim(1999,2025)
+ax2.set_ylim(0,1)
 
 ax2.set_title('IDH ao decorrer dos anos')
-plt.grid(True)
-plt.legend()
+ax2.set_xlabel('ano')
+ax2.set_ylabel('IDH')
+ax2.grid(True)
+ax2.legend(title='IDH')
 
 # Exibindo os gráficos
 plt.show()
